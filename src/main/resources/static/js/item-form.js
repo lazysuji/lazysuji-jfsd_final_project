@@ -1,4 +1,4 @@
-const itemsController = new ItemsController(0);
+const itemsController = new ItemsController();
 
 const newItemForm = document.querySelector('#newItemForm');
 
@@ -16,4 +16,7 @@ newItemForm.addEventListener("submit", (event) => {
     newItemName.value = '';
     newItemDescription.value = '';
     newItemImageUrl.value = '';
+
+//    localStorage.removeItem("itemId");
+//    location.href="/items";
 })
